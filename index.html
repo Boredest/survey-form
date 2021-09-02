@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="bg-img"></div>
+<div id="container">
+  <!-- Title & Description-->
+  <h1 id="title">Langley CodeCamp</h1>
+  <p id="description"> Thank you for filling out our survey.</p>
+  <hr>
+
+  <!-- Name Section-->
+
+  <form id="survey-form">
+    <section>
+      <label for="name" id="name-label"> Name</label>
+      <input type="text" id="name" name="name" required placeholder="Enter your name." pattern="[A-Za-z0-9_]{1,15}">
+    </section>
+
+    <!-- E-mail Section-->
+    <section>
+      <label id="email-label" for="email">Email</label>
+      <input type="email" id="email" name="email" required placeholder="Enter your email." pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+    </section>
+
+    <!-- Age Section-->
+
+    <section>
+      <label id="number-label" for="number">Age(optional)</label>
+
+      <input type="number" id="number" name="number" min="8" max="99" placeholder="Age">
+    </section>
+
+    <!-- Occupation Section-->
+    <section>
+
+      <label id="occupation-label" for="occupation">Occupation</label>
+      <select name="occupation" id="occupation">
+        <option value="">--Please choose an option--</option>
+        <option value="">Student</option>
+        <option value="">Employed</option>
+        <option value="">Prefer not to say</option>
+      </select>
+    </section>
+
+    <!-- Refer Section-->
+
+    <div class="wrapper">
+      <p>Would you refer us to a friend?</p>
+     <input type="radio" name="refer" value="Yes"> Yes <br>
+       <input type="radio" name="refer" value="Maybe"> Maybe <br>
+      <input type="radio" name="refer" value="No"> Not sure <br>
+    </div>
+
+    <!-- Feature Section-->
+
+    <section>
+      <label id="refer-label" for="refer">What is your favorite feature?</label>
+      <select name="occupation" id="refer">
+        <option value="">--Please choose an option--</option>
+        <option value="">Challenges</option>
+        <option value="">Code Projects</option>
+        <option value="">Meetups</option>
+      </select>
+    </section>
+
+    <!-- Improvement Section-->
+
+    <section>
+
+      <div class="wrapper">
+        <p>What would you like to see improved?</p>
+        <input type="checkbox" name="improve" value="meetup"> Meetups <br>
+        <input type="checkbox" name="improve" value="projects"> Project Ideas <br>
+        <input type="checkbox" name="improve" value="challenges"> Challenges <br>
+        <input type="checkbox" name="improve" value="video"> Videos <br>
+        <input type="checkbox" name="improve" value="forum"> Forum <br>
+        <input type="checkbox" name="improve" value="extra"> Extra Content <br>
+        <input type="checkbox" name="improve" value="guest"> Guest Events <br>
+        <input type="checkbox" name="improve" value="reviews"> Code Reviews <br>
+        <input type="checkbox" name="improve" value="social"> Social Nights <br>
+        <input type="checkbox" name="improve" value="website"> Website <br>
+      </div>
+
+    </section>
+
+    <!-- Feedback Section-->
+
+    <section>
+
+      <label id="feedback-label" for="feedback">Any suggestions or feedback?</label>
+      <textarea id="feedback" name="feedback" placeholder="Enter your comments here..."></textarea>
+    </section>
+
+    <!-- Submit Section-->
+
+    <section>
+      <button id="submit">Submit</button>
+    </section>
+  </form>
+</div>
+    
+</body>
+</html>

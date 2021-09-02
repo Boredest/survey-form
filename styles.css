@@ -1,0 +1,201 @@
+
+html {
+    height: 100%;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  h1 {
+    color: white;
+    font-family: "Merriweather", serif;
+    text-align: center;
+  }
+  p {
+    margin-bottom: 10px;
+    font-family: "Open Sans", sans-serif;
+  }
+  hr {
+    margin: 0 15%;
+    color: white;
+  }
+  
+  /* Background Image */
+  .bg-img {
+    background-image: url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=1080");
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    position: fixed;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+  }
+  
+  #container {
+    margin: 0px auto;
+    width: 35%;
+    border-radius: 10px;
+    padding: 20px;
+   text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  #description {
+    text-align: center;
+    font-style: italic;
+    font-size: 16px;
+  }
+  
+  #name {
+    width: 90%;
+    padding: 8px;
+    border-radius: 5px;
+  }
+  
+  #email {
+    width: 90%;
+    padding: 8px;
+    border-radius: 5px;
+  }
+  
+  #number {
+    width: 90%;
+    padding: 8px;
+    border-radius: 5px;
+  }
+  #dropdown {
+    width: 90%;
+    padding: 8px;
+    border-radius: 5px;
+  }
+  
+  #submit {
+    width: 90%;
+    padding: 8px;
+    border-radius: 5px;
+    color: White;
+    text-decoration: none;
+    border: none;
+    background-color: #2b2b2b;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 1);
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  #feedback {
+    width: 90%;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+  }
+  #name-label {
+    float: left;
+    margin-left: 24px;
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 5px 0;
+  }
+  
+  #email-label {
+    float: left;
+    margin-left: 24px;
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 5px 0;
+  }
+  
+  #number-label {
+    margin-top: 20px;
+    float: left;
+    margin-left: 24px;
+    font-size: 18px;
+    padding: 5px 0;
+  }
+  
+  #occupation-label {
+    float: left;
+    margin-top: 20px;
+    margin-left: 24px;
+    font-size: 18px;
+    padding: 5px 0;
+    clear: both;
+  }
+  
+  #occupation{
+    width: 90%;
+    padding: 8px;
+    border-radius: 5px;
+  }
+  
+  #refer-label {
+    float: left;
+    margin-left: 24px;
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 5px 0;
+    clear: both;
+  }
+  
+  #refer{
+    width: 90%;
+    padding: 8px;
+    border-radius: 5px;
+  }
+  
+  #feedback-label {
+    float: left;
+    margin-left: 24px;
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 5px 0;
+    clear: both;
+    
+  }
+  
+  .wrapper {
+    display: block;
+    float: left;
+    text-align: left;
+    margin-left: 24px;
+    margin-top: 20px;
+    font-size: 18px;
+    
+  }
+  
+  /* 
+  floats on right and left side.*/
+  
+  
+  /* Fixes dropdowns not being same width as
+  the other input areas.*/
+  input,
+  select,
+  textarea,
+  button {
+    -ms-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+  }
+  
+  @media screen and (max-width: 540px) {
+    #container {
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      position: fixed;
+      overflow: auto;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      border-radius: 0px;
+      padding: 0px;
+    }
+  }
+  
